@@ -1,41 +1,253 @@
-
-ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
+* {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
 }
 
-h1 {
-  text-align: center;
+body {
+  background: -webkit-linear-gradient(90deg, #2bc0e4 10%, #eaecc6 90%); /* chrome 10+, Saf5.. */
+  background: -o-linear-gradient(90deg, #2bc0e4 10%, #eaecc6 90%); /* Opera 11.10+ */
+  background: linear-gradient(90deg, #2bc0e4 10%, #eaecc6 90%);  /* W3c */
 }
 
-.books-list {
-  border: 1px solid gray;
-  margin: 0 25% 0 25%;
+a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
 }
 
-.books-list div {
-  text-align: center;
-  margin-left: 1%;
-  margin-right: 1%;
+/* styling for header section starts */
+.nav-section {
+  margin: 0 3% 0 3%;
 }
 
-.books-list ul {
+.nav-section nav {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 0.1rem;
-  padding-top: 0.1rem;
-  background: lightgray;
+  background: #2980b9;
+  border: 1px solid black;
+  border-radius: 2%;
 }
 
-.gray-color {
-  background: gray;
+nav h3 {
+  margin-left: 2rem;
+  color: white;
 }
 
-.get-info {
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 2rem;
+}
+
+.current-date {
+  text-align: end;
+  margin-right: 1rem;
+}
+
+a:hover {
+  color: #1a2236;
+}
+
+/* styling for header section ends */
+
+/* styling for the main section starts  */
+main {
+  margin: 5% 10% 5% 10%;
+}
+
+main img {
+  opacity: 0.4;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.remove-content {
+  display: none;
+}
+
+/* books-section  */
+.books-list-h2 {
+  display: none;
+}
+
+.books-list-h2.active {
+  display: block;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: rgb(52, 48, 48);
+}
+
+.books-list-container {
+  display: none;
+}
+
+.books-list-container .book-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1%;
+}
+
+/* contact section  */
+.contact-section ul {
+  margin-top: 2rem;
+  font-size: 1rem;
+  margin-left: 2%;
+}
+
+.contact-section li {
+  margin-bottom: 1rem;
+}
+
+/* contact section  */
+
+.books-list-container .book-info ul {
+  display: flex;
+  list-style: none;
+}
+
+.books-list-container .book-info ul li {
+  margin-right: 2rem;
+}
+
+.books-list-container .book-info .remove-this-book {
+  height: 3rem;
+  color: white;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  background: #2980b9;
+  margin-right: 2%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.book-info .remove-this-book:hover {
+  color: #2980b9;
+  background: white;
+}
+
+.books-list-container .book-info:nth-child(odd) {
+  background-color: #77c6d9;
+}
+
+.books-list-container.active {
+  display: block;
+  border: 2px solid gray;
+}
+
+/* books-section  */
+
+/* form section  */
+.form {
+  display: none;
+}
+
+.form.active {
+  display: block;
+}
+
+.form h2 {
+  font-size: 2rem;
+  line-height: 1.5rem;
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.bookTitle,
+.bookAutor {
+  padding-left: 1rem;
+  box-sizing: border-box;
+  width: 70%;
+  margin-left: 15%;
+  height: 3.25rem;
+  background: #fff;
+  border: 1px solid #dfdfe0;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+}
+
+.bookTitle::placeholder,
+.bookAutor::placeholder {
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.3125rem;
+  color: rgb(180, 175, 175);
+}
+
+.add {
+  width: 20%;
+  height: 3rem;
+  color: #fff;
+  margin-left: 65%;
+  background: #1a2236;
+  font-size: 1rem;
+  line-height: 1.5rem;
   text-align: center;
 }
 
-.get-info .add {
-  justify-self: end;
+/* form section  */
+
+/* contact section  */
+.contact-section {
+  display: none;
 }
+
+.contact-section h2 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.3rem;
+  line-height: 1.5rem;
+}
+
+/* footer section  */
+footer p {
+  color: white;
+  text-align: center;
+}
+
+/* footer section  */
+
+.contact-section p {
+  margin: 10px;
+  font-size: 1.3rem;
+}
+
+.contact-section.active {
+  display: flex;
+  justify-content: center;
+}
+
+/* contact section  */
+
+.contact-section a:hover {
+  color: #2980b9;
+}
+
+.bookTitle:hover,
+.bookAutor:hover {
+  border: 2px solid blue;
+}
+
+.add:hover {
+  color: #1a2236;
+  background: white;
+  cursor: pointer;
+}
+
+/* styling for the main section ends */
+
+/* styling for the footer section starts */
+footer {
+  margin: 2rem 3% 1rem 3%;
+  padding: 0 2% 0 2%;
+  background: #2980b9;
+  border: 1px solid black;
+  border-radius: 2%;
+}
+
+/* styling for the footer section ends */
