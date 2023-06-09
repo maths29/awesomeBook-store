@@ -115,7 +115,7 @@ To run tests, run the following command:
 
 - Project is deployed using [GitHub Pages](https://pages.github.com/)
 - 
-- [Live Demo Link]()
+- [Live Demo Link](https://maths29.github.io/awesomeBook-store/)
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- AUTHORS -->
 
